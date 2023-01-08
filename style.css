@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  padding: 5rem;
+  background-color: #ed9dffd8;
+}
+
+#skills {
+  background-color: #ed9dffd8;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+#about {
+  text-align: justify;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.navbar-brand {
+  transition: .3s all;
+}
+
+.navbar-brand:hover {
+  scale: 1.1;
+  transform: rotate(-4deg);
+  transition: .3s all;
+  color: #f3bcffd8;
+}
+
+nav .nav-link:hover {
+  transition: .5s all;
+}
+
+nav .nav-link:hover {
+  color: #f3bcffd8;
+  transform: scale(1.2);
+  transition: .5s all;
+}
+
+input {
+  transition: .5s all;
+}
+
+input:focus {
+  outline: #6300c7 !important;
+  box-shadow: 1px 1px 8px #6300c7 !important;
+  border: #6300c7 !important;
+  transition: .5s all;
+}
+textarea {
+  resize: none !important;
+  transition: .5s all;
+}
+textarea:focus {
+  outline: #6300c7 !important;
+  box-shadow: 1px 1px 8px #6300c7 !important;
+  border: #6300c7 !important;
+  transition: .5s all;
+}
