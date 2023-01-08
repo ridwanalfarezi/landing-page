@@ -215,40 +215,14 @@
     </footer>
     <!-- End of Footer -->
 
+    <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwBMrZBMps29zhDfYR0EOQYzAOPAOBLzUnvv0utAGjh1a1SsFDaA0SP4ZKsp0iDqrWT/exec'
-      const form = document.forms['portfolio-contact-form']
-      const btnSubmit = document.querySelector('.btn-submit');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        /* 
-        Ketika Tombol Submit di Click 
-        Munculkan tombol loading dan hilangkan tombol submit 
-        */
-        btnLoading.classList.toggle('d-none');
-        btnSubmit.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            // Munculkan tombol submit dan hilangkan tombol loading 
-            btnLoading.classList.toggle('d-none');
-            btnSubmit.classList.toggle('d-none');
-            // Munculkan Alert
-            myAlert.classList.toggle('d-none');
-            // Reset Form
-            form.reset();
-            console.log('Success!', response)
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+    <!-- My JS -->
+    <script src="script.js"></script>
   </body>
 </html>
